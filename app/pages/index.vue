@@ -1,7 +1,9 @@
 <script setup></script>
 
 <template>
-  <div>Index Page</div>
+  <div>
+    <h1>{{ $t('hello') }}</h1>
+  </div>
 </template>
 
 <style scoped></style>
