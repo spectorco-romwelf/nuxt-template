@@ -1,7 +1,22 @@
-<script setup></script>
+<script setup>
+const { locale } = useI18n();
+const storeProducts = useProductsStore();
+
+storeProducts.initialFetchProducts();
+
+const test = () => {
+  console.log('Products:', storeProducts.products);
+  storeProducts.products = 'lmao';
+};
+</script>
 
 <template>
-  <div><h1>Products Page</h1></div>
+  <div>
+    <NuxtLink :to="`/${locale}`">Go to Home</NuxtLink>
+    <h1 @click="test">{{ $t('hello') }}</h1>
+    <p v-if="!storeProducts.isLoading">{{ storeProducts.products?.length }}</p>
+    <p v-else>Loading...</p>
+  </div>
 </template>
 
 <style scoped></style>
