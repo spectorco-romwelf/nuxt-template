@@ -1,5 +1,9 @@
 <script setup>
 const { locale } = useI18n();
+
+const { data } = await useFetch('/api/distributor-products');
+
+console.log(data.value);
 </script>
 
 <template>
