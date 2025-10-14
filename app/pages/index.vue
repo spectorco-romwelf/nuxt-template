@@ -1,7 +1,8 @@
 <script setup>
 const { locale } = useI18n();
+const storeProducts = useProductsStore();
 
-const { data } = await useFetch('/api/distributor-products');
+storeProducts.initialFetchFeaturedProducts();
 </script>
 
 <template>
