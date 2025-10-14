@@ -1,8 +1,9 @@
 export default defineEventHandler(async (event) => {
+  const config = useRuntimeConfig();
   try {
     const [data, dataFeatures] = await Promise.all([
-      $fetch('http://testin.ca/decdout-api/products'),
-      $fetch('https://storyboard.decdoutmerch.com/decdout-api/feature/active'),
+      $fetch(`${config.public.apiDecdout}/products`),
+      $fetch(`${config.apiFeatured}/feature/active`),
     ]);
 
     const productMap = new Map(data.products.map((p) => [p.productCode, p]));

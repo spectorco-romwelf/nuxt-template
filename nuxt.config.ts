@@ -70,4 +70,11 @@ export default defineNuxtConfig({
       { code: 'us', language: 'en-US', name: 'United States', file: 'us.json' },
     ],
   },
+  runtimeConfig: {
+    apiFeatured: '', 
+    public: {
+      apiDecdout: '', 
+      apiStoryboard: '', 
+    },
+  },
 });

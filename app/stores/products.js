@@ -1,4 +1,6 @@
 export const useProductsStore = defineStore('products', () => {
+  const config = useRuntimeConfig();
+
   const products = ref([]);
   const originalProducts = ref([]);
   const isLoading = ref(false);
@@ -10,7 +12,7 @@ export const useProductsStore = defineStore('products', () => {
     try {
       isLoading.value = true;
       const { data, error: fetchError } = await useFetch(
-        'http://testin.ca/decdout-api/products'
+        `${config.public.apiDecdout}/products`
       );
 
       if (fetchError.value) {

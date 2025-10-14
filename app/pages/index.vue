@@ -1,7 +1,7 @@
 <script setup>
 const { locale } = useI18n();
 
-// const { data } = await useFetch('/api/distributor-products');
+const { data } = await useFetch('/api/distributor-products');
 </script>
 
 <template>
