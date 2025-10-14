@@ -17,6 +17,7 @@ const test = () => {
     <p v-if="!storeProducts.isLoading">{{ storeProducts.products?.length }}</p>
     <p v-else>Loading...</p>
   </div>
+  <AppButton>Test Button</AppButton>
 </template>
 
 <style scoped></style>

@@ -18,6 +18,9 @@ export default defineNuxtConfig({
     classSuffix: '',
     storage: 'sessionStorage',
   },
+  image:{
+    domains: ['spectorandco.com']
+  },
   i18n: {
     strategy: 'prefix',
     defaultLocale: 'en',
