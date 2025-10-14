@@ -1,3 +1,21 @@
 @import "tailwindcss";
 @import "@nuxt/ui";
 
+body {
+  font-family: 'CorporateS-Regular', sans-serif;
+}
+.regular {
+  font-family: 'CorporateS-Regular';
+}
+.medium {
+  font-family: 'CorporateS-Medium';
+}
+.demi {
+  font-family: 'CorporateS-Demi';
+}
+.bold {
+  font-family: 'CorporateS-Bold';
+}
+.extrabold {
+  font-family: 'CorporateS-ExtraBold';
+}
