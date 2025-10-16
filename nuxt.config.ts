@@ -13,6 +13,12 @@ export default defineNuxtConfig({
     'pinia-plugin-persistedstate/nuxt',
   ],
   css: ['~/assets/css/main.css'],
+  components: [
+    {
+      path: '~/components',
+      pathPrefix: false,
+    },
+  ],
   colorMode: {
     preference: 'light',
     fallback: 'light',

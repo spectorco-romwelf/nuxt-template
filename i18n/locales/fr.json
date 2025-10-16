@@ -1,3 +1,9 @@
 {
-    "hello": "Bonjour"
+  "hello": "Bonjour",
+  "nav": {
+    "products": "Products",
+    "salesTools": "Sales Tools",
+    "ourCompany": "Our Company",
+    "sales": "Sales"
+  }
 }
