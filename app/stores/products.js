@@ -4,6 +4,7 @@ export const useProductsStore = defineStore('products', () => {
   const products = ref([]);
   const originalProducts = ref([]);
   const featuredProducts = ref([]);
+  const categoryProducts = ref([]);
 
   const isLoading = ref(false);
   const error = ref(null);
@@ -26,6 +27,7 @@ export const useProductsStore = defineStore('products', () => {
       if (data.value) {
         originalProducts.value = data.value.products;
         products.value = data.value.products;
+        return data.value.products;
       }
     } finally {
       isLoading.value = false;
@@ -37,9 +39,7 @@ export const useProductsStore = defineStore('products', () => {
 
     try {
       isLoading.value = true;
-      const { data, error: fetchError } = await useFetch(
-        '/api/distributor-products'
-      );
+      const { data, error: fetchError } = await useFetch('/api/home-products');
 
       if (fetchError.value) {
         error.value = fetchError.value;
@@ -48,7 +48,9 @@ export const useProductsStore = defineStore('products', () => {
       }
 
       if (data.value) {
-        featuredProducts.value = data.value.products;
+        console.log(data.value);
+
+        featuredProducts.value = data.value.featProducts.features[0].products;
       }
     } finally {
       isLoading.value = false;
@@ -58,6 +60,8 @@ export const useProductsStore = defineStore('products', () => {
   return {
     products,
     originalProducts,
+    featuredProducts,
+    categoryProducts,
     isLoading,
     error,
     initialFetchProducts,

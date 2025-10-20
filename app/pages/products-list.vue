@@ -2,7 +2,9 @@
 const { locale } = useI18n();
 const storeProducts = useProductsStore();
 
-storeProducts.initialFetchProducts();
+// storeProducts.initialFetchProducts();
+
+await useAsyncData('products', storeProducts.initialFetchProducts);
 
 const test = () => {
   console.log('Products:', storeProducts.products);
