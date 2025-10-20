@@ -1,0 +1,11 @@
+{
+  "category": {
+    "new": "New Arrivals",
+    "bag": "Bags",
+    "notebook": "Books",
+    "bottle": "Bottles",
+    "pen": "Pens",
+    "travel": "Travel",
+    "giftset": "Giftsets"
+  }
+}

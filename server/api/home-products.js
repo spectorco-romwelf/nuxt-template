@@ -11,8 +11,8 @@ export default defineEventHandler(async (event) => {
     const categories = [
       'bag',
       'notebook',
-      'pen',
       'bottle',
+      'pen',
       'travel',
       'giftset',
     ];
