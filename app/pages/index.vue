@@ -3,6 +3,12 @@ const { locale } = useI18n();
 const storeProducts = useProductsStore();
 
 await useAsyncData('home-products', storeProducts.initialFetchHomeProducts);
+
+const { toastSuccess } = useToaster();
+
+function testToast() {
+  toastSuccess('Product has been added successfully!');
+}
 </script>
 
 <template>
@@ -19,7 +25,7 @@ await useAsyncData('home-products', storeProducts.initialFetchHomeProducts);
         <AppImage :src="`${categoryProd.image}`" alt="Spector and Co. Logo" width="200" height="200" />
       </div>
     </div>
-
+    <UButton label="Add to calendar" color="neutral" variant="outline" icon="i-lucide-plus" @click="testToast" />
     <p class="regular">Regular</p>
     <p class="medium">Medium</p>
     <p class="demi">Demi</p>
