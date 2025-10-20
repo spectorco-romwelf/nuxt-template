@@ -6,14 +6,15 @@ export const useProductsStore = defineStore('products', () => {
   const featuredProducts = ref([]);
   const categoryProducts = ref([]);
 
-  const isLoading = ref(false);
+  const isLoadingProducts = ref(false);
+  const isLoadingHome = ref(false);
   const error = ref(null);
 
   const initialFetchProducts = async () => {
     if (products.value.length) return;
 
     try {
-      isLoading.value = true;
+      isLoadingProducts.value = true;
       const { data, error: fetchError } = await useFetch(
         `${config.public.apiDecdout}/products`
       );
@@ -30,15 +31,15 @@ export const useProductsStore = defineStore('products', () => {
         return data.value.products;
       }
     } finally {
-      isLoading.value = false;
+      isLoadingProducts.value = false;
     }
   };
 
-  const initialFetchFeaturedProducts = async () => {
+  const initialFetchHomeProducts = async () => {
     if (featuredProducts.value.length) return;
 
     try {
-      isLoading.value = true;
+      isLoadingHome.value = true;
       const { data, error: fetchError } = await useFetch('/api/home-products');
 
       if (fetchError.value) {
@@ -48,12 +49,12 @@ export const useProductsStore = defineStore('products', () => {
       }
 
       if (data.value) {
-        console.log(data.value);
-
         featuredProducts.value = data.value.featProducts.features[0].products;
+        categoryProducts.value = data.value.categProducts;
+        return data.value;
       }
     } finally {
-      isLoading.value = false;
+      isLoadingHome.value = false;
     }
   };
 
@@ -62,9 +63,10 @@ export const useProductsStore = defineStore('products', () => {
     originalProducts,
     featuredProducts,
     categoryProducts,
-    isLoading,
+    isLoadingHome,
+    isLoadingProducts,
     error,
     initialFetchProducts,
-    initialFetchFeaturedProducts,
+    initialFetchHomeProducts,
   };
 });

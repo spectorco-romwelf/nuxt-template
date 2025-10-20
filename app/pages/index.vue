@@ -2,7 +2,7 @@
 const { locale } = useI18n();
 const storeProducts = useProductsStore();
 
-storeProducts.initialFetchFeaturedProducts();
+await useAsyncData('home-products', storeProducts.initialFetchHomeProducts);
 </script>
 
 <template>
@@ -12,6 +12,14 @@ storeProducts.initialFetchFeaturedProducts();
 
     <NuxtLink :to="`/${locale}/products-list`" prefetch>Go to products</NuxtLink>
     <h1>{{ $t('hello') }}</h1>
+
+    <div class="flex items-center gap-2">
+      <div v-for="categoryProd in storeProducts.categoryProducts" :key="categoryProd.name">
+        {{ categoryProd.name }}
+        <AppImage :src="`${categoryProd.image}`" alt="Spector and Co. Logo" width="200" height="200" />
+      </div>
+    </div>
+
     <p class="regular">Regular</p>
     <p class="medium">Medium</p>
     <p class="demi">Demi</p>
