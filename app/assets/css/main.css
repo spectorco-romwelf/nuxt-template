@@ -6,9 +6,9 @@
   --breakpoint-4xl: 2560px;
   --breakpoint-5xl: 3840px;
 }
-
 body {
   font-family: 'CorporateS-Regular', sans-serif;
+   @apply text-black;
 }
 .regular {
   font-family: 'CorporateS-Regular';
@@ -26,5 +26,7 @@ body {
   font-family: 'CorporateS-ExtraBold';
 }
 .main-container {
-  @apply mx-4 md:mx-10 xl:mx-24 2xl:mx-75 3xl:mx-96;
+  /* @apply mx-4 md:mx-10 xl:mx-24 2xl:mx-75 3xl:mx-96; */
+    @apply mx-auto px-4 2xl:px-0;
+  max-width: 1320px;
 }

@@ -71,7 +71,7 @@ export default defineNuxtConfig({
     strategy: 'prefix',
     defaultLocale: 'en',
     locales: [
-      { code: 'en', language: 'en-CA', name: 'Canada-EN',  files: ['en/common.json', 'en/home.json'] },
+      { code: 'en', language: 'en-CA', name: 'Canada-EN',  files: ['en/common.json', 'en/navigation.json', 'en/home.json'] },
       { code: 'fr', language: 'fr-CA', name: 'Canada-FR', files: ['fr/common.json', 'fr/home.json'] },
       { code: 'us', language: 'en-US', name: 'United States', files: ['us/common.json', 'us/home.json'] },
     ],

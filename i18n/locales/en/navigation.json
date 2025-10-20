@@ -1,0 +1,19 @@
+{
+  "nav": {
+    "products": "Products",
+    "newArrivals": "New Arrivals",
+    "onSale": "On Sale",
+    "bags": "Bags",
+    "drinkware": "Drinkware",
+    "journals": "Journals",
+    "pens": "Pens",
+    "backpack": "Backpack",
+    "messengerBags": "Messenger Bags",
+
+    "salesTools": "Sales Tools",
+
+    "ourCompany": "Our Company",
+
+    "sales": "Sales"
+  }
+}
