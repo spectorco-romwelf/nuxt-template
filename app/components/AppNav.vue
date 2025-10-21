@@ -55,17 +55,18 @@ const navlinks = computed(() => {
 
       <div class="flex h-full items-center gap-6">
         <form class="relative">
-          <input type="search" class="w-72 border-b border-black px-1 py-0.5 focus:outline-none" placeholder="Search here..." />
-          <Icon name="material-symbols:search-rounded" style="color: black" class="absolute top-1/2 right-1 -translate-y-1/2 text-2xl" />
+          <input type="text" class="w-72 border-b border-black px-1 py-0.5 pr-8 focus:outline-none" placeholder="Search here..." />
+          <Icon name="lucide:search" style="color: black" class="absolute top-1/2 right-1 -translate-y-1/2 text-2xl" />
         </form>
 
         <div>
-          <Icon name="material-symbols:flag" style="color: black" class="text-4xl" />
+          <!-- <Icon name="lucide:flag" style="color: black" class="text-3xl" /> -->
+          <LocaleSwitcher />
         </div>
 
-        <Icon name="material-symbols:menu-book" style="color: black" class="text-4xl" />
+        <Icon name="lucide:book-open-text" style="color: black" class="text-3xl" />
 
-        <Icon name="material-symbols:person" style="color: black" class="text-4xl" />
+        <Icon name="lucide:user-round" style="color: black" class="text-3xl" />
       </div>
     </div>
   </header>
