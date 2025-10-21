@@ -12,8 +12,12 @@ function testToast() {
 </script>
 
 <template>
-  <div class="main-container">
-    <Categories />
+  <div>
+    <div class="main-container">
+      <Categories />
+    </div>
+
+    <Banners />
 
     <UButton label="Add to Storyboard" color="neutral" variant="outline" icon="i-lucide-plus" @click="testToast" />
     <p class="regular">Regular</p>
