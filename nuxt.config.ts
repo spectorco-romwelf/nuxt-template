@@ -2,6 +2,12 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
+  app: {
+    baseURL: '/',
+  },
+  devServer: {
+    port: 8000,
+  },
   modules: [
     '@nuxt/fonts',
     '@nuxt/eslint',
@@ -71,16 +77,31 @@ export default defineNuxtConfig({
     strategy: 'prefix',
     defaultLocale: 'en',
     locales: [
-      { code: 'en', language: 'en-CA', name: 'Canada-EN',  files: ['en/common.json', 'en/navigation.json', 'en/home.json'] },
-      { code: 'fr', language: 'fr-CA', name: 'Canada-FR', files: ['fr/common.json', 'fr/home.json'] },
-      { code: 'us', language: 'en-US', name: 'United States', files: ['us/common.json', 'us/home.json'] },
+      {
+        code: 'en',
+        language: 'en-CA',
+        name: 'Canada-EN',
+        files: ['en/common.json', 'en/navigation.json', 'en/home.json'],
+      },
+      {
+        code: 'fr',
+        language: 'fr-CA',
+        name: 'Canada-FR',
+        files: ['fr/common.json', 'fr/home.json'],
+      },
+      {
+        code: 'us',
+        language: 'en-US',
+        name: 'United States',
+        files: ['us/common.json', 'us/home.json'],
+      },
     ],
   },
   runtimeConfig: {
-    apiFeatured: '', 
+    apiFeatured: '',
     public: {
-      apiDecdout: '', 
-      apiStoryboard: '', 
+      apiDecdout: '',
+      apiStoryboard: '',
     },
   },
 });
