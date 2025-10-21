@@ -15,7 +15,7 @@ function testToast() {
   <div class="main-container">
     <Categories />
 
-    <UButton label="Add to calendar" color="neutral" variant="outline" icon="i-lucide-plus" @click="testToast" />
+    <UButton label="Add to Storyboard" color="neutral" variant="outline" icon="i-lucide-plus" @click="testToast" />
     <p class="regular">Regular</p>
     <p class="medium">Medium</p>
     <p class="demi">Demi</p>

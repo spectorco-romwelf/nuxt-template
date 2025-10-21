@@ -59,12 +59,11 @@ const navlinks = computed(() => {
           <Icon name="lucide:search" style="color: black" class="absolute top-1/2 right-1 -translate-y-1/2 text-2xl" />
         </form>
 
-        <div>
-          <!-- <Icon name="lucide:flag" style="color: black" class="text-3xl" /> -->
-          <LocaleSwitcher />
-        </div>
+        <LocaleSwitcher />
 
-        <Icon name="lucide:book-open-text" style="color: black" class="text-3xl" />
+        <UTooltip :arrow="true" :delay-duration="0" text="View Storyboard" :ui="{ content: 'bg-black text-white text-sm px-2 py-4', arrow: 'fill-black' }">
+          <img src="@/assets/icons/storyboard.png" alt="storyboard-icon" width="40" height="40" class="h-auto w-10 cursor-pointer" />
+        </UTooltip>
 
         <Icon name="lucide:user-round" style="color: black" class="text-3xl" />
       </div>

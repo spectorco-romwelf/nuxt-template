@@ -4,9 +4,9 @@ const toaster = { position: 'top-center', progress: false, max: 3, expand: false
 
 <template>
   <NuxtLoadingIndicator :throttle="0" color="#000" />
-  <NuxtLayout>
-    <UApp :toaster="toaster">
+  <UApp :toaster="toaster">
+    <NuxtLayout>
       <NuxtPage />
-    </UApp>
-  </NuxtLayout>
+    </NuxtLayout>
+  </UApp>
 </template>
