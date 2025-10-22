@@ -164,11 +164,11 @@ const mainBanners = computed(() => {
     <UCarousel v-slot="{ item }" :items="mainBanners" fade loop arrows :autoplay="{ delay: 8000 }" :ui="{ item: 'basis-full', arrows: 'absolute top-1/2 -translate-y-1/2 flex w-full justify-between', prev: 'ml-16 cursor-pointer', next: 'mr-16 cursor-pointer', icon: 'w-12 h-12 !text-5xl' }">
       <a :href="item.path" target="_blank" rel="noopener">
         <!-- Desktop -->
-        <img :src="`/images/banners/${item.resolvedImg}`" :alt="item.id" class="4xl:h-auto hidden h-[475px] w-full object-contain lg:block 2xl:object-cover" />
+        <AppImage :src="`/images/banners/${item.resolvedImg}`" :alt="item.id" width="1900" height="476" class="4xl:h-auto hidden h-[475px] w-full object-contain lg:block 2xl:object-cover" />
         <!-- Tablet -->
-        <img :src="`/images/banners/${locale !== 'fr' ? item.medium.img : item.medium.imgFR}`" :alt="item.id" class="hidden h-[475px] w-full object-contain md:block lg:hidden" />
+        <AppImage :src="`/images/banners/${locale !== 'fr' ? item.medium.img : item.medium.imgFR}`" :alt="item.id" width="1200" height="600" class="hidden h-[475px] w-full object-contain md:block lg:hidden" />
         <!-- Mobile -->
-        <img :src="`/images/banners/${locale !== 'fr' ? item.mobile.img : item.mobile.imgFR}`" :alt="item.id" class="h-[475px] w-full object-contain md:hidden" />
+        <AppImage :src="`/images/banners/${locale !== 'fr' ? item.mobile.img : item.mobile.imgFR}`" :alt="item.id" width="426" height="640" class="h-[475px] w-full object-contain md:hidden" />
       </a>
     </UCarousel>
   </div>

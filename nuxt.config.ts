@@ -81,7 +81,7 @@ export default defineNuxtConfig({
         code: 'en',
         language: 'en-CA',
         name: 'Canada-EN',
-        files: ['en/common.json', 'en/navigation.json', 'en/home.json'],
+        files: ['en/common.json', 'en/navigation.json', 'en/home.json', 'en/products.json'],
       },
       {
         code: 'fr',
