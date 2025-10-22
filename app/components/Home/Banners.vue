@@ -160,7 +160,7 @@ const mainBanners = computed(() => {
 </script>
 
 <template>
-  <div class="relative">
+  <section class="relative">
     <UCarousel v-slot="{ item }" :items="mainBanners" fade loop arrows :autoplay="{ delay: 8000 }" :ui="{ item: 'basis-full', arrows: 'absolute top-1/2 -translate-y-1/2 flex w-full justify-between', prev: 'ml-16 cursor-pointer', next: 'mr-16 cursor-pointer', icon: 'w-12 h-12 !text-5xl' }">
       <a :href="item.path" target="_blank" rel="noopener">
         <!-- Desktop -->
@@ -171,5 +171,5 @@ const mainBanners = computed(() => {
         <AppImage :src="`/images/banners/${locale !== 'fr' ? item.mobile.img : item.mobile.imgFR}`" :alt="item.id" width="426" height="640" class="h-[475px] w-full object-contain md:hidden" />
       </a>
     </UCarousel>
-  </div>
+  </section>
 </template>
