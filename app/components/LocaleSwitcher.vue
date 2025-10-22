@@ -16,7 +16,7 @@ const changeLocale = async (code) => {
 <template>
   <div class="relative">
     <button class="flex cursor-pointer items-center gap-2 rounded-md transition hover:bg-gray-100" @click="showDropdown = !showDropdown">
-      <AppImage :src="`/icons/flags/${locale === 'en' ? 'canada' : locale === 'fr' ? 'quebec' : 'usa'}.svg`" alt="flag" width="40" height="30" class="h-auto w-9" />
+      <AppImage :src="`/icons/flags/${locale === 'en' ? 'canada' : locale === 'fr' ? 'quebec' : 'usa'}.svg`" alt="flag" width="40" height="30" class="h-auto w-8" />
     </button>
 
     <transition name="fade">

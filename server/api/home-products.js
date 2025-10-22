@@ -57,7 +57,7 @@ export default defineEventHandler(async (event) => {
         const details = productMap.get(fp.productCode);
         return {
           ...fp,
-          details: details || null,
+          ...details,
         };
       });
 

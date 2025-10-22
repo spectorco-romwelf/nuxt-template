@@ -19,6 +19,10 @@ function testToast() {
 
     <Banners />
 
+    <div class="main-container">
+      <Midware />
+    </div>
+
     <UButton label="Add to Storyboard" color="neutral" variant="outline" icon="i-lucide-plus" @click="testToast" />
     <p class="regular">Regular</p>
     <p class="medium">Medium</p>

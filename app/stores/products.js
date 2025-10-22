@@ -49,7 +49,7 @@ export const useProductsStore = defineStore('products', () => {
       }
 
       if (data.value) {
-        featuredProducts.value = data.value.featProducts.features[0].products;
+        featuredProducts.value = data.value.featProducts.features;
         categoryProducts.value = data.value.categProducts;
         return data.value;
       }

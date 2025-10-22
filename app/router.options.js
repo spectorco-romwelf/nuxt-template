@@ -11,6 +11,7 @@ export default {
       return false;
     }
 
-    return { top: 0 };
+    return;
+    // return { top: 0 };
   },
 };
