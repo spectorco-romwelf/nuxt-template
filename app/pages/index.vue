@@ -19,7 +19,7 @@ function testToast() {
 
     <Banners />
 
-    <div class="main-container">
+    <div class="bg-[#f8f9fa]">
       <Midware />
     </div>
 

@@ -1,5 +1,5 @@
-@import "tailwindcss";
-@import "@nuxt/ui";
+@import 'tailwindcss';
+@import '@nuxt/ui';
 
 @theme {
   --breakpoint-3xl: 1920px;
@@ -8,7 +8,7 @@
 }
 body {
   font-family: 'CorporateS-Regular', sans-serif;
-   @apply text-black;
+  @apply text-black;
 }
 .regular {
   font-family: 'CorporateS-Regular';
@@ -27,6 +27,24 @@ body {
 }
 .main-container {
   /* @apply mx-4 md:mx-10 xl:mx-24 2xl:mx-75 3xl:mx-96; */
-    @apply mx-auto px-4 2xl:px-0;
+  @apply mx-auto px-4 2xl:px-0;
   max-width: 1320px;
+}
+.scroll-container::-webkit-scrollbar {
+  height: 10px;
+  width: 8px;
+}
+.scroll-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+.scroll-container::-webkit-scrollbar-thumb {
+  background-color: #444;
+  border-radius: 20px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+  transition: background-color 0.3s ease;
+}
+.scroll-container::-webkit-scrollbar-thumb:hover {
+  background-color: #000;
+  cursor: pointer;
 }

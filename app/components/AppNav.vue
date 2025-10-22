@@ -61,11 +61,13 @@ const navlinks = computed(() => {
 
         <LocaleSwitcher />
 
-        <UTooltip :arrow="true" :delay-duration="0" text="View Storyboard" :ui="{ content: 'bg-black text-white text-sm px-2 py-4', arrow: 'fill-black' }">
+        <AppTooltip text="View Storyboard">
           <img src="@/assets/icons/storyboard.png" alt="storyboard-icon" width="40" height="40" class="h-auto w-10 cursor-pointer" />
-        </UTooltip>
+        </AppTooltip>
 
-        <Icon name="lucide:user-round" style="color: black" class="text-3xl" />
+        <AppTooltip text="Account">
+          <img src="@/assets/icons/user.png" alt="profile-icon" width="40" height="40" class="w-6 cursor-pointer" />
+        </AppTooltip>
       </div>
     </div>
   </header>
