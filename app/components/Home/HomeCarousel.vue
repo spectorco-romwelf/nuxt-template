@@ -13,6 +13,10 @@ const props = defineProps({
     type: Boolean,
     default: true,
   },
+  showArrow: {
+    type: Boolean,
+    default: true,
+  },
 });
 
 const carouselRef = ref(null);
@@ -40,7 +44,7 @@ const scrollRight = () => {
         <slot></slot>
       </div>
 
-      <div class="absolute -bottom-4 left-1/2 flex -translate-x-1/2 items-center justify-center gap-2">
+      <div v-if="showArrow" class="absolute -bottom-4 left-1/2 flex -translate-x-1/2 items-center justify-center gap-2">
         <button @click="scrollLeft" class="flex h-8 w-8 cursor-pointer items-center justify-center rounded-full bg-gray-600 transition-all hover:bg-black">
           <Icon name="lucide:arrow-left" class="text-2xl text-white" />
         </button>

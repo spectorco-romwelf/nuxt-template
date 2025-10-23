@@ -3,7 +3,7 @@ const storeProducts = useProductsStore();
 </script>
 
 <template>
-  <HomeCarousel v-for="feature in storeProducts.featuredProducts" :key="feature.name" :title="feature.name" :name="feature.name" :showScrollbar="false">
+  <HomeCarousel v-for="feature in storeProducts.featuredProducts" :key="feature.name" :title="$t('homeTitle.distributor')" :name="feature.name">
     <template #subtitle>
       <p class="demi mb-2 text-2xl">{{ feature.name }}</p>
     </template>

@@ -7,5 +7,25 @@
     "pen": "Pens",
     "travel": "Travel",
     "giftset": "Giftsets"
+  },
+  "homeTitle": {
+    "distributor": "Distributor Go-Tos",
+    "brandingMethods": "Branding Methods That Deliver",
+    "whyLeading": "Why Leading Brands Choose Us?",
+    "realFeedback": "Real Feedback. Real Results.",
+    "certifiedBy": "Certified By"
+  },
+  "branding": {
+    "4cp": "4-Color Process",
+    "bellyBands": "Belly Bands",
+    "debossed": "Debossed",
+    "dome": "Dome",
+    "embroidery": "Embroidery",
+    "toneOnTone": "Glossy Tone-on-Tone",
+    "laser": "Laser",
+    "linerPages": "Liner Pages",
+    "padPrinted": "Pad Printed",
+    "patches": "Patches",
+    "silkscreened": "Silk Screened"
   }
 }
