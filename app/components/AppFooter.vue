@@ -37,6 +37,7 @@
           <Icon name="lucide:instagram" class="text-4xl" />
           <Icon name="lucide:linkedin" class="text-4xl" />
           <Icon name="lucide:youtube" class="text-4xl" />
+          <i class="ri-tiktok-line text-4xl"></i>
         </div>
       </div>
 
