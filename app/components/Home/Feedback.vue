@@ -20,7 +20,7 @@ const feedbacks = [
 
 <template>
   <section class="main-container relative mt-24 py-8">
-    <p class="mb-8 text-center text-5xl font-bold uppercase">Real Feedback. Real Results.</p>
+    <p class="mb-8 text-center text-5xl font-bold uppercase">{{ $t('homeTitle.realFeedback') }}</p>
 
     <div class="mx-auto">
       <div class="grid grid-cols-3 gap-4">

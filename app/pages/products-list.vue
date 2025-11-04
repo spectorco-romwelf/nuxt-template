@@ -3,6 +3,12 @@ const { locale } = useI18n();
 const storeProducts = useProductsStore();
 
 await useAsyncData('products', storeProducts.initialFetchProducts);
+
+const { toastSuccess } = useToaster();
+
+function testToast() {
+  toastSuccess('Product has been added successfully!');
+}
 </script>
 
 <template>
@@ -16,6 +22,13 @@ await useAsyncData('products', storeProducts.initialFetchProducts);
       corporis. Culpa praesentium cum harum natus velit dolorum, eos optio laborum sunt omnis consequuntur doloribus porro, sed qui, blanditiis excepturi officia nesciunt error tempora dolor repudiandae. Explicabo assumenda iste maxime ex dolorum veniam aperiam id optio nobis recusandae repellat suscipit quam esse nam molestiae adipisci quia unde tempora, animi corrupti modi. Nisi deserunt reiciendis consequatur, nam rerum, porro ratione vero voluptates ut totam consectetur libero minus placeat veniam magni quis. Itaque, dolorem laudantium? Veritatis iure quia ad error eaque, deserunt aliquam.
     </p>
   </div>
+
+  <UButton label="Add to Storyboard" color="neutral" variant="outline" icon="i-lucide-plus" @click="testToast" />
+  <p class="regular">Regular</p>
+  <p class="medium">Medium</p>
+  <p class="demi">Demi</p>
+  <p class="bold">Bold</p>
+  <p class="extrabold">ExtraBold</p>
 </template>
 
 <style scoped></style>

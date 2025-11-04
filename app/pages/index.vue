@@ -1,14 +1,7 @@
 <script setup>
-const { locale } = useI18n();
 const storeProducts = useProductsStore();
 
 await useAsyncData('home-products', storeProducts.initialFetchHomeProducts);
-
-const { toastSuccess } = useToaster();
-
-function testToast() {
-  toastSuccess('Product has been added successfully!');
-}
 </script>
 
 <template>
@@ -19,29 +12,32 @@ function testToast() {
 
     <Banners />
 
-    <div class="bg-[#f8f9fa]">
+    <div class="home-background">
       <Midware />
     </div>
 
-    <div class="bg-[#f8f9fa]">
+    <div class="home-background">
       <Brandings />
     </div>
 
-    <div class="bg-[#f8f9fa]">
+    <div class="home-background">
       <LeadBrandings />
     </div>
 
-    <div class="bg-[#f8f9fa]">
+    <div class="home-background">
       <Feedback />
     </div>
 
-    <UButton label="Add to Storyboard" color="neutral" variant="outline" icon="i-lucide-plus" @click="testToast" />
-    <p class="regular">Regular</p>
-    <p class="medium">Medium</p>
-    <p class="demi">Demi</p>
-    <p class="bold">Bold</p>
-    <p class="extrabold">ExtraBold</p>
+    <div class="home-background">
+      <Certifications />
+    </div>
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+@reference "@/assets/css/main.css";
+
+.home-background {
+  @apply bg-[#f8f9fa];
+}
+</style>

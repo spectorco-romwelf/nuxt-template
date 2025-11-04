@@ -46,48 +46,6 @@ const mainBanners = computed(() => {
       },
     },
     {
-      id: 'glossy',
-      path: `/${locale.value}/branding-methods/tone-on-tone`,
-      img: '/us/banner-glossy-large.jpg',
-      imgFR: '/fr/banner-glossy-large.jpg',
-      mobile: {
-        img: '/us/banner-glossy-mobile.jpg',
-        imgFR: '/fr/banner-glossy-mobile.jpg',
-      },
-      medium: {
-        img: '/us/banner-glossy-medium.jpg',
-        imgFR: '/fr/banner-glossy-medium.jpg',
-      },
-    },
-    {
-      id: 'trend',
-      path: `https://www.spectorandco.com/${locale.value}/spe/marketing/Download_Catalog`,
-      img: '/us/banner-trend-large.jpg',
-      imgFR: '/fr/banner-trend-large.jpg',
-      mobile: {
-        img: '/us/banner-trend-mobile.jpg',
-        imgFR: '/fr/banner-trend-mobile.jpg',
-      },
-      medium: {
-        img: '/us/banner-trend-medium.jpg',
-        imgFR: '/fr/banner-trend-medium.jpg',
-      },
-    },
-    {
-      id: 'catalog',
-      path: `https://www.spectorandco.com/${locale.value}/spe/marketing/Download_Catalog`,
-      img: '/us/banner-catalog-large.webp',
-      imgFR: '/fr/banner-catalog-large.webp',
-      mobile: {
-        img: '/us/banner-catalog-mobile.webp',
-        imgFR: '/fr/banner-catalog-mobile.webp',
-      },
-      medium: {
-        img: '/us/banner-catalog-medium.webp',
-        imgFR: '/fr/banner-catalog-medium.webp',
-      },
-    },
-    {
       id: 'blankbags',
       path: `https://www.spectorandco.com/${locale.value}/spe/productslist?decoration_method=Embroidery`,
       img: '/us/banner-blankbags-large.jpg',
@@ -99,48 +57,6 @@ const mainBanners = computed(() => {
       medium: {
         img: '/us/banner-blankbags-medium.webp',
         imgFR: '/fr/banner-blankbags-medium.webp',
-      },
-    },
-    {
-      id: 'storyboard',
-      path: `http://4.209.160.33:7900/${locale.value}`,
-      img: '/us/banner-storyboard-large.jpg',
-      imgFR: '/fr/banner-storyboard-large.webp',
-      mobile: {
-        img: '/us/banner-storyboard-mobile.jpg',
-        imgFR: '/fr/banner-storyboard-mobile.webp',
-      },
-      medium: {
-        img: '/us/banner-storyboard-medium.webp',
-        imgFR: '/fr/banner-storyboard-medium.webp',
-      },
-    },
-    {
-      id: 'scribl',
-      path: `https://www.spectorandco.com/${locale.value}/spe/productslist/scribl_perfect`,
-      img: '/us/banner-scribl-large.jpg',
-      imgFR: '/fr/banner-scribl-large.webp',
-      mobile: {
-        img: '/us/banner-scribl-mobile.jpg',
-        imgFR: '/fr/banner-scribl-mobile.webp',
-      },
-      medium: {
-        img: '/us/banner-scribl-medium.webp',
-        imgFR: '/fr/banner-scribl-medium.webp',
-      },
-    },
-    {
-      id: 'alldress',
-      path: `https://www.spectorandco.com/${locale.value}/spe/marketing/creative-concepts#Canadian`,
-      img: '/us/banner-alldress-large.jpg',
-      imgFR: '/fr/banner-alldress-large.jpg',
-      mobile: {
-        img: '/us/banner-alldress-mobile.jpg',
-        imgFR: '/fr/banner-alldress-mobile.jpg',
-      },
-      medium: {
-        img: '/us/banner-alldress-medium.jpg',
-        imgFR: '/fr/banner-alldress-medium.jpg',
       },
     },
   ];
