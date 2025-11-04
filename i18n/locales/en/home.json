@@ -27,5 +27,11 @@
     "padPrinted": "Pad Printed",
     "patches": "Patches",
     "silkscreened": "Silk Screened"
+  },
+  "leadBranding": {
+    "instantLookbook": "Instant Lookbook",
+    "creativeConcepts": "Creative Concepts",
+    "overseasDirect": "Overseas Direct",
+    "awards": "Awards"
   }
 }

@@ -63,7 +63,9 @@ const brandings = [
 <template>
   <HomeCarousel :title="$t('homeTitle.brandingMethods')" name="brandings" :showScrollbar="false">
     <div class="min-h-96 max-w-[315px] min-w-[315px]" v-for="branding in brandings" :key="branding.name">
-      <NuxtLink :to="`/${locale}`"><img :src="branding.img" :alt="branding.name" /></NuxtLink>
+      <NuxtLink :to="`/${locale}`">
+        <AppImage :src="branding.img" :alt="branding.name" width="1000" height="1200" />
+      </NuxtLink>
       <span class="demi uppercase">{{ $t(`branding.${branding.name}`) }}</span>
     </div>
   </HomeCarousel>
