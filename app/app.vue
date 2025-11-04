@@ -1,5 +1,9 @@
 <script setup>
 const toaster = { position: 'top-center', progress: false, max: 3, expand: false, ui: { base: 'text-center mt-8' } };
+
+useHead({
+  title: 'Spector & Co.',
+});
 </script>
 
 <template>

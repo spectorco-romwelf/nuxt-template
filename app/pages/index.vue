@@ -5,7 +5,7 @@ await useAsyncData('home-products', storeProducts.initialFetchHomeProducts);
 </script>
 
 <template>
-  <div>
+  <div class="mb-14">
     <div class="main-container">
       <Categories />
     </div>
