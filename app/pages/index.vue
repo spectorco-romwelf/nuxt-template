@@ -31,6 +31,10 @@ function testToast() {
       <LeadBrandings />
     </div>
 
+    <div class="bg-[#f8f9fa]">
+      <Feedback />
+    </div>
+
     <UButton label="Add to Storyboard" color="neutral" variant="outline" icon="i-lucide-plus" @click="testToast" />
     <p class="regular">Regular</p>
     <p class="medium">Medium</p>
